@@ -1,6 +1,7 @@
 import React from "react"
 import Header from './header'
 import Footer from './footer'
+import Widget from './widget'
 
 const Layout = ({ isHomePage, children }) => {
 
@@ -9,7 +10,19 @@ const Layout = ({ isHomePage, children }) => {
       
       <Header isHomePage={isHomePage}/>
 
-      <main>{children}</main>
+      <main>
+        {isHomePage ? 
+          <React.Fragment>
+            <section>
+              {children}
+            </section>
+            <Widget/>
+          </React.Fragment>
+          : <section>
+              {children}
+            </section>
+        }
+      </main>
 
       <Footer />
 

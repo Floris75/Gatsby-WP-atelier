@@ -5,7 +5,7 @@ import Nav from './navigation'
 const Header = (props) => {
     const {isHomePage} = props;
     const data = useStaticQuery(graphql`
-    query LayoutQuery {
+    query HeaderQuery {
       wp {
         generalSettings {
           title

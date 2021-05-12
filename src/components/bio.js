@@ -12,7 +12,8 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      <img src="/Bleu_18x18.png" alt="avatar" />
+      <img src="/Bleu_18x18.png" alt="avatar"/>
+      <p>Made by Floris</p>
     </div>
   )
 }
