@@ -18,7 +18,7 @@ const Layout = ({ isHomePage, children }) => {
             </section>
             <Widget/>
           </React.Fragment>
-          : <section>
+          : <section className="alone">
               {children}
             </section>
         }

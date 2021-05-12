@@ -397,3 +397,7 @@ a .date {
   font-size: var(--fontSize-1);
   color: black;
 }
+
+.alone {
+  width:100%;
+}
